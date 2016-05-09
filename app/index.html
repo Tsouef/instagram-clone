@@ -9,14 +9,25 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div ui-view="navbar"></div>
+<div ui-view="container"></div>
 
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-messages/angular-messages.js"></script>
 <script src="index.module.js"></script>
 <script src="index.config.js"></script>
 <script src="index.routes.js"></script>
 <script src="index.run.js"></script>
+<script src="components/main/main.controller.js"></script>
+<script src="components/navbar/navbar.controller.js"></script>
+<script src="components/login/login.controller.js"></script>
+<script src="components/signup/signup.controller.js"></script>
+<script src="components/photo/photo.controller.js"></script>
 </body>
 </html>
